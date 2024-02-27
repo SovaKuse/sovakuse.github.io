@@ -1,10 +1,16 @@
 <!DOCTYPE html>
 <head>
 	<title>Абибас 4 полосы оригинал</title>
-	<head/>
-	<body>
-		<img src="maxresdefault.jpg">
-		<!-- COMEEEEEEEEENT -->
-		<a href="https://yandex.ru/images/search?family=yes&text=%D1%81%D0%B8%D0%BD%D0%B8%D0%B9+%D1%8D%D0%BA%D1%80%D0%B0%D0%BD+%D1%85%D0%BE%D1%80%D1%80%D0%BE%D1%80&pos=11&rpt=simage&img_url=https%3A%2F%2Fevacristina.files.wordpress.com%2F2011%2F11%2Fblue-screen-of-death.jpg&from=tabbar&lr=193">Prikl kartinka</a>
-	</body>
-</html>
+<head/>
+	<script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+<script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/c-frame/aframe-extras@v6.1.1/dist/aframe-extras.js"></script>
+
+<body style='margin : 0px; overflow: hidden;'>
+  <a-scene embedded arjs='sourceType: webcam;'>
+    <a-marker preset='hiro'>
+    	<a-box position='0 0.5 0' material='color: green;'></a-box>
+    	<a-entity camera></a-entity>
+    </a-marker>
+  </a-scene>
+</body>
